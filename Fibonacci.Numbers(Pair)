@@ -1,0 +1,45 @@
+/*Author Arpit Singh Verma*/
+/*Recursive Approach of Fibonacci Numbers*/
+/*Most important Fibonacci Numbers Imp for Cp*/
+/*Cp-algorithms*/
+#include"bits/stdc++.h"
+using namespace std;  
+int main(){
+      
+        
+        //main code of the problem
+        //creating a pair of int And INT 
+        pair<int,int> fib(int n){
+              
+               if(n==0)
+                 
+                 return {0,1};
+
+                 auto p =  fib(n >> 1);
+                 int c  = p.first * (2 * p.second * p.second);
+                 int d = p.first * p.first + p.second * p.second;
+
+                 if(n&1)
+
+                 return {d,c+d};
+                 else 
+                 return {c,d};
+//the above code returns Fn and Fn+1 as a pair.
+        }
+}
+      
+        /*Contains main code to be implemented*/
+       
+        //Anything in the number raise to power --->>>0<<<<--- is 1 so Here power is b and b == 0  therefore a = 1;
+
+     
+
+
+        //DIVING B BY 2  and then performing the actions
+
+        /*----------->>>>>Jai Bhole <<<<<<<--------------*/
+         
+          
+           
+           
+
