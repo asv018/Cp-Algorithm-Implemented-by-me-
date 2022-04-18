@@ -1,0 +1,31 @@
+/*Author Arpit Singh Verma*/
+/*Recursive Approach of The Binary Exponentiation*/
+/*Cp-algorithms*/
+#include"bits/stdc++.h"
+using namespace std;  
+long long binpow(long long a , long long b){
+      
+        /*Contains main code to be implemented*/
+        if(b==0)
+
+        return 1;
+
+        //Anything in the number raise to power --->>>0<<<<--- is 1 so Here power is b and b == 0  therefore a = 1;
+
+        long long res = binpow(a , b / 2);
+
+        if(b % 2)
+
+
+        //DIVING B BY 2  and then performing the actions
+
+        /*----------->>>>>Jai Bhole <<<<<<<--------------*/
+         
+          
+           
+            return res * res * a;
+            else 
+
+            return res * res;
+
+}
